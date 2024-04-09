@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            Hello there! I'm here to help you discover which tech career might be the best fit for you. Type "start" to begin your career exploration journey!
+        </template>
+    </category>
+   
+    <category>
+        <pattern>HI</pattern>
+        <template>
+            Hi! I'm excited to assist you in finding a tech career that suits you perfectly. Just type "start" to begin.
+        </template>
+    </category>
+   
+    <category>
+        <pattern>*</pattern>
+        <template>
+            I'm not quite sure how to respond to that. If you're here to explore tech careers, please type "start" to get going!
+        </template>
+    </category>
+
+    <category>
+        <pattern>START</pattern>
+        <template>
+            Let's start your journey into tech! First off, do you have any experience coding?
+            <button>Yes I do</button>
+            <button>No I do not</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>NO I DO NOT</pattern>
+        <template>
+            No worries!
+            <br/>Are you more interested in Front-end or Back-end development? Here’s a brief definition on both:
+            <br/>Front-end: Focuses on the visual parts of websites that users interact with.
+            <br/>Back-end: Behind-the-scenes part of a website or app. It deals with the 'brain' that makes everything work, handling data and making sure all parts of the site or app communicate well.
+            <button>Front end</button>
+            <button>Back end</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>FRONT END</pattern>
+        <template>
+            Choosing Front-end means you're interested in designing and creating the visual part of websites and apps—the part users interact with. Would you like to learn more about the tools and languages used in Front-end, like HTML or JavaScript?
+            <button>Learn More about Front end</button>
+            <button>Go to Back end</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GO TO BACK END</pattern>
+        <template>
+            <srai>BACK END</srai>
+        </template>
+    </category>
+   
+    <category>
+        <pattern>LEARN MORE ABOUT FRONT END</pattern>
+        <template>
+        <button>HTML</button>
+        <button>Javascript</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>BACK END</pattern>
+        <template>
+            Choosing Back-end means you want to work on the server side in making sure the site or app functions correctly by handling databases, server logic, and application integration. Would you like to learn more about tools and languages used in Back-end like Python, Java, or SQL?
+            <button>Learn More about Back end</button>
+            <button>Go to Front end</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GO TO FRONT END</pattern>
+        <template>
+            <srai>FRONT END</srai>
+        </template>
+    </category>
+   
+    <category>
+        <pattern>LEARN MORE ABOUT BACK END</pattern>
+        <template>
+        <button>Java</button>
+        <button>Python</button>
+        <button>SQL</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>YES I DO</pattern>
+        <template>
+            Awesome!
+            <br/>Which coding language are you more familiar with?
+            <button>Java</button>
+            <button>SQL</button>
+            <button>Python</button>
+            <button>HTML</button>
+            <button>Javascript</button>
+        </template>
+    </category>
+   
+    <!-- JAVA QUESTIONS -->
+    <category>
+        <pattern>JAVA</pattern>
+        <template>
+            Good choice!
+            <br/>Considering your familiarity with Java, Software Engineering might be a good path for you. Would you like to explore more about this field or consider other options?
+            <button>Explore Software Engineering</button>
+            <button>Consider Other Options</button>
+        </template>
+    </category>
+   
+    <!-- Software Engineering -->
+    <category>
+        <pattern>EXPLORE SOFTWARE ENGINEERING</pattern>
+        <template>
+        Software engineering is a broad field that involves designing and developing software systems.
+        <br/>Are you more intrigued by the idea of creating new applications or improving and maintaining existing ones?
+        <button>Creating New Applications</button>
+        <button>Improving Existing Software</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>CREATING NEW APPLICATIONS</pattern>
+        <template>
+        Creating new applications means you could be involved in innovative projects, developing new software from scratch.
+        <br/>Do you prefer working on front end, back end, or full stack development?
+        <button>Front end Development</button>
+        <button>Back end Development</button>
+        <button>Full stack Development</button>
+        </template>
+    </category>
+   
+    <category>
+    <pattern>IMPROVING EXISTING SOFTWARE</pattern>
+    <template>
+        Improving and maintaining existing software is an important aspect of software engineering, focusing on enhancing and fixing legacy systems.
+        <br/>Would you be more interested in system optimization or debugging and troubleshooting?
+        <button>System Optimization</button>
+        <button>Debugging and Troubleshooting</button>
+    </template>
+</category>
+
+<category>
+    <pattern>SYSTEM OPTIMIZATION</pattern>
+    <template>
+        System optimization engineers work to improve the performance and scalability of software. This could be the right path if you're into making things run faster and more efficiently.
+        <br/>Does this sound like a good fit for you?
+        <button>Yes Software Engineering feels right</button>
+        <button>No Software Engineering does not feel right</button>
+    </template>
+</category>
+
+<category>
+    <pattern>DEBUGGING AND TROUBLESHOOTING</pattern>
+    <template>
+        Debugging and troubleshooting are crucial in keeping software reliable. If you enjoy solving puzzles and getting to the bottom of complex issues, this could be your calling.
+        <br/>Is this the type of work you see yourself doing?
+        <button>Yes Software Engineering feels right</button>
+        <button>No Software Engineering does not feel right</button>
+    </template>
+</category>
+
+    <category>
+        <pattern>FRONT END DEVELOPMENT</pattern>
+        <template>
+        Got it, focusing on the visual and interactive aspects of applications.
+        <br/>Does this direction in software engineering feel right for you?
+        <button>Yes Software Engineering feels right</button>
+        <button>No Software Engineering does not feel right</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>BACK END DEVELOPMENT</pattern>
+        <template>
+        Understood, concentrating on the server side and database management of applications.
+        <br/>Is this what you see yourself doing in software engineering?
+        <button>Yes Software Engineering feels right</button>
+        <button>No Software Engineering does not feel right</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>FULL STACK DEVELOPMENT</pattern>
+        <template>
+        Full stack, a blend of both front and back end tasks.
+        <br/>Does this comprehensive approach to software engineering appeal to you?
+        <button>Yes Software Engineering feels right</button>
+        <button>No Software Engineering does not feel right</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>YES SOFTWARE ENGINEERING FEELS RIGHT</pattern>
+        <template>
+        Congrats! The career that fits you best is SOFTWARE ENGINEER!
+        <button>Try again</button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>NO SOFTWARE ENGINEERING DOES NOT FEEL RIGHT</pattern>
+        <template>
+        Let's try again! Which coding language interests you?
+        <button>SQL</button>
+        <button>Python</button>
+        <button>HTML</button>
+        <button>Javascript</button>
+        </template>
+    </category>  
+   
+<!-- SQL QUESTIONS -->
+    <category>
+        <pattern>SQL</pattern>
+        <template>
+            Good choice!
+            <br/>Considering your familiarity with SQL, Data Analytics might be a good path for you. Would you like to explore more about this field or consider other options?
+             <button>Explore Data Analytics</button>
+             <button>Consider Other Options</button>
+        </template>
+    </category>
+   
+<!-- Data Analytics -->
+   
+<category>
+    <pattern>EXPLORE DATA ANALYTICS</pattern>
+    <template>
+        Data Analytics involves analyzing large sets of data to uncover hidden patterns, correlations, and insights. Using statistical tools and algorithms to process and interpret data. Working with various data tools like SQL, Python, R, and Tableau.
+        <br/>Which area of Data Analytics interests you more, working with big data technologies or focusing on statistical analysis for insights?
+        <button>Big Data Technologies</button>
+        <button>Statistical Analysis</button>
+    </template>
+</category>
+
+<category>
+    <pattern>BIG DATA TECHNOLOGIES</pattern>
+    <template>
+        Big Data Technologies involve handling and analyzing massive datasets that traditional data processing tools cannot handle. Skills in Hadoop, Spark, and knowledge of distributed systems are often required.
+        <br/>Does focusing on Big Data in Data Analytics feel like the right fit for you?
+        <button>Yes Data Analytics feels right</button>
+        <button>No Data Analytics does not feel right</button>
+    </template>
+</category>
+
+<category>
+    <pattern>STATISTICAL ANALYSIS</pattern>
+    <template>
+        Statistical Analysis in Data Analytics focuses on using statistical methods to collect, review, analyze, and draw conclusions from data to make informed decisions.
+        <br/>Is Statistical Analysis within Data Analytics what you see yourself doing?
+        <button>Yes Data Analytics feels right</button>
+        <button>No Data Analytics does not feel right</button>
+    </template>
+</category>
+    <category>
+    <pattern>YES DATA ANALYTICS FEELS RIGHT</pattern>
+    <template>
+        Congrats! The career that fits you best is DATA ANALYST!
+        <button>Try again</button>
+    </template>
+</category>
+
+<category>
+    <pattern>NO DATA ANALYTICS DOES NOT FEEL RIGHT</pattern>
+    <template>
+        Let's try again! Which coding language interests you?
+        <button>Java</button>
+        <button>Python</button>
+        <button>HTML</button>
+        <button>Javascript</button>
+    </template>
+</category>
+
+<!-- Cybersecurity -->
+
+  <category>
+        <pattern>PYTHON</pattern>
+        <template>
+            Good choice!
+            <br/>Considering your familiarity with Python, Cybersecurity might be a good path for you. Would you like to explore more about this field or consider other options?
+             <button>Explore Cybersecurity</button>
+            <button>Consider Other Options</button>
+        </template>
+    </category>
+   
+<category>
+    <pattern>EXPLORE CYBERSECURITY</pattern>
+    <template>
+        Cybersecurity involves defending computer systems and data from digital threats, encompassing network, application, and information security. Python is used in automating security tasks, developing penetration testing tools, vital for uncovering security flaws.
+        <br/>Would you be more interested in Network Security or Ethical Hacking?
+        <button>Network Security</button>
+        <button>Ethical Hacking</button>
+    </template>
+</category>
+
+<category>
+    <pattern>NETWORK SECURITY</pattern>
+    <template>
+        Network Security focuses on protecting the usability and integrity of your network and data. It includes implementing measures to prevent unauthorized access, misuse, malfunction, modification, destruction, or improper disclosure.
+        <br/>Does Network Security within Cybersecurity sound like a suitable path for you?
+        <button>Yes Cybersecurity feels right</button>
+        <button>No Cybersecurity does not feel right</button>
+    </template>
+</category>
+
+<category>
+    <pattern>ETHICAL HACKING</pattern>
+    <template>
+        Ethical Hacking involves legally breaking into computers and devices to test an organization's defenses. It's about understanding the mindset of malicious hackers to better protect against attacks.
+        <br/>Is Ethical Hacking the aspect of Cybersecurity you're interested in?
+        <button>Yes Cybersecurity feels right</button>
+        <button>No Cybersecurity does not feel right</button>
+    </template>
+</category>
+
+<category>
+    <pattern>YES CYBERSECURITY FEELS RIGHT</pattern>
+    <template>
+        Congrats! The career that fits you best is CYBERSECURITY SPECIALIST!
+        <button>Try again</button>
+    </template>
+</category>
+
+<category>
+    <pattern>NO CYBERSECURITY DOES NOT FEEL RIGHT</pattern>
+    <template>
+        Let's try again! Which coding language interests you?
+        <button>Java</button>
+        <button>SQL</button>
+        <button>HTML</button>
+        <button>Javascript</button>
+    </template>
+</category>
+
+<!-- Web Development -->
+
+ <category>
+    <pattern>HTML</pattern>
+    <template>
+        Good choice!
+            <br/>Considering your familiarity with HTML, Web Development might be a good path for you. Would you like to explore more about this field or consider other options?
+        <button>Explore Web Development</button>
+        <button>Consider Other Options</button>
+    </template>
+    </category>
+   
+<category>
+    <pattern>EXPLORE WEB DEVELOPMENT</pattern>
+    <template>
+        Web Development is all about building and maintaining websites and web applications. It involves both Front-end development, focusing on the user interface and experience, and Back-end development, dealing with server-side logic, databases, and application integration.
+        <br/>Do you see yourself more as a Front-end Developer, Back-end Developer, or perhaps a Full-stack Developer?
+        <button>Front end Developer</button>
+        <button>Back end Developer</button>
+        <button>Full stack Developer</button>
+    </template>
+</category>
+
+<category>
+    <pattern>FRONT END DEVELOPER</pattern>
+    <template>
+        Front-end Developers work on the visual part of websites and applications, ensuring user-friendly interfaces with HTML, CSS, and JavaScript.
+        <br/>Does specializing in the visual aspects of web development align with your interests?
+        <button>Yes Web Development feels right</button>
+        <button>No Web Development does not feel right</button>
+    </template>
+</category>
+
+<category>
+    <pattern>BACK END DEVELOPER</pattern>
+    <template>
+        Back-end Developers focus on server-side logic and integration, working with databases, server languages like Python, Ruby, and frameworks to build the technology that powers the front end.
+        <br/>Is working behind the scenes on the functionality of websites what you want to do?
+        <button>Yes Web Development feels right</button>
+        <button>No Web Development does not feel right</button>
+    </template>
+</category>
+
+<category>
+    <pattern>FULL STACK DEVELOPER</pattern>
+    <template>
+        Full-stack Developers have a diverse skill set to work on both the front end and back end, providing a comprehensive approach to web development.
+        <br/>Does taking on both front-end and back-end responsibilities excite you?
+        <button>Yes Web Development feels right</button>
+        <button>No Web Development does not feel right</button>
+    </template>
+</category>
+
+<category>
+    <pattern>YES WEB DEVELOPMENT FEELS RIGHT</pattern>
+    <template>
+        Congrats! The career that fits you best is WEB DEVELOPER!
+        <button>Try again</button>
+    </template>
+</category>
+
+<category>
+    <pattern>NO WEB DEVELOPMENT DOES NOT FEEL RIGHT</pattern>
+    <template>
+        Let's try again! Which coding language interests you?
+        <button>Java</button>
+        <button>SQL</button>
+        <button>Python</button>
+        <button>Javascript</button>
+    </template>
+</category>
+
+    <!--JAVASCRIPT QUESTIONS -->
+    <!-- UX Design -->
+<category>
+    <pattern>JAVASCRIPT</pattern>
+    <template>
+        Good choice!
+        <br/>While JavaScript is key for Web Development, understanding it also greatly benefits a career in UX Design. It helps in creating interactive prototypes and understanding the limitations and possibilities of web interfaces.
+        <br/>Would you like to delve deeper into UX Design, focusing on enhancing user experiences and interactions?
+        <button>Explore UX Design</button>
+        <button>Consider Other Options</button>
+    </template>
+</category>
+
+<category>
+    <pattern>EXPLORE UX DESIGN</pattern>
+    <template>
+        UX Design is about improving the overall experience users have with digital products. It's a field that blends technical skills with creativity and psychology.
+        <br/>Which aspect of UX Design interests you the most?
+        <button>User Research</button>
+        <button>Interaction Design</button>
+        <button>Visual Design</button>
+    </template>
+</category>
+
+<category>
+    <pattern>USER RESEARCH</pattern>
+    <template>
+        User Research focuses on understanding user behaviors, needs, and motivations through observation techniques, task analysis, and other feedback methodologies.
+        <br/>Does this research-driven approach to enhancing user experiences sound like something you'd be passionate about?
+        <button>Yes UX Design feels right</button>
+        <button>No UX Design does not feel right</button>
+    </template>
+</category>
+
+<category>
+    <pattern>INTERACTION DESIGN</pattern>
+    <template>
+        Interaction Design is about creating engaging interfaces with well-thought-out behaviors. It involves understanding how users interact with products and designing the interaction points accordingly.
+        <br/>Is designing interactive experiences where you see yourself?
+        <button>Yes UX Design feels right</button>
+        <button>No UX Design does not feel right</button>
+    </template>
+</category>
+
+<category>
+    <pattern>VISUAL DESIGN</pattern>
+    <template>
+        Visual Design focuses on the aesthetics of a site or product, like its colors, images, and general look and feel. It's about making user experiences visually appealing and intuitive.
+        <br/>Are you drawn to the artistic side of UX Design, focusing on visual storytelling and branding?
+        <button>Yes UX Design feels right</button>
+        <button>No UX Design does not feel right</button>
+    </template>
+</category>
+
+<category>
+    <pattern>YES UX DESIGN FEELS RIGHT</pattern>
+    <template>
+        Congrats! The career that best fits you is UX DESIGNER!
+        <button>Try again</button>
+    </template>
+</category>
+
+   <!-- RESTART FEATURE -->
+   <category>
+    <pattern>TRY AGAIN</pattern>
+    <template>
+        Let's start your journey into tech again! Do you have any experience coding?
+        <button>Yes I do</button>
+        <button>No I do not</button>
+    </template>
+    </category>
+
+<category>
+    <pattern>NO UX DESIGN DOES NOT FEEL RIGHT</pattern>
+    <template>
+        No worries, finding the right fit is crucial. Which coding language or area interests you?
+        <button>Java</button>
+        <button>SQL</button>
+        <button>Python</button>
+        <button>HTML</button>
+    </template>
+</category>
+
+    <category>
+    <pattern>CONSIDER OTHER OPTIONS</pattern>
+    <template>
+        No problem! Let's find the right path for you. Click a coding language below and it will find a career title for you to explore!
+        <button>Java</button>
+        <button>SQL</button>
+        <button>Python</button>
+        <button>HTML</button>
+        <button>Javascript</button>
+    </template>
+    </category>
+
+<category>
+    <pattern></pattern>
+    <template></template>
+</category>
+
+</aiml>
