@@ -1,7 +1,7 @@
 👋 Hi, I’m @elmiraarut
 
 🔍 About Me:
-I'm Elmira, a passionate individual diving into the world of technology and data. With a background in Computer Science which I am currently majoring in, I've always been fascinated not only by technology itself but also by its rapid evolution and development over the years. It pushes me to explore and build my experience in the tech world.
+I'm Elmira, a passionate individual diving into the world of technology and data. As a Computer Science graduate, I've always been fascinated not only by technology itself but also by its rapid evolution and development over the years. It pushes me to explore and build my experience in the tech world.
 
 👀 I’m interested in Data Analysis, Data Science, Web Development, App Development, Machine Learning, and Cybersecurity. 
 
